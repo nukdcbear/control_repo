@@ -3,6 +3,9 @@ node default {
 node 'master.puppet.vm' {
   include role::master_server
 }
+node 'minetest.puppet.vm' {
+  include role::minecraft_server
+}
 node 'tdcos7pupm02.eastus2.cloudapp.azure.com' {
   include role::master_server
   file { '/root/README':
